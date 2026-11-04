@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previsão do Tempo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>🌤️ Previsão do Tempo</h1>
+    <p>Pesquise uma cidade e veja o clima dos próximos dias</p>
+  </header>
+
+  <main>
+
+    
+    <section id="area-pesquisa">
+      <form id="form-pesquisa">
+        <label for="campo-cidade">Nome da cidade:</label>
+        <input type="text" id="campo-cidade" placeholder="Ex.: Porto Alegre">
+        <button type="submit">Pesquisar</button>
+      </form>
+    </section>
+
+  
+    <section id="area-mensagens" class="mensagem info">
+      Digite o nome de uma cidade para começar.
+    </section>
+
+    <section id="area-resultados">
+      <h2>Localidades encontradas</h2>
+      <ul id="lista-resultados"></ul>
+    </section>
+
+   
+    <section id="area-atual">
+      <h2>Condições atuais</h2>
+      <div id="painel-atual">
+        <p class="vazio">Nenhuma cidade selecionada.</p>
+      </div>
+    </section>
+
+   
+    <section id="area-previsao">
+      <h2>Próximos 5 dias</h2>
+      <div id="lista-previsao">
+        <p class="vazio">Nenhuma cidade selecionada.</p>
+      </div>
+    </section>
+
+   
+    <section id="area-favoritos">
+      <h2>⭐ Cidades favoritas</h2>
+      <ul id="lista-favoritos"></ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Dados meteorológicos fornecidos por
+      <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo.com</a>.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
